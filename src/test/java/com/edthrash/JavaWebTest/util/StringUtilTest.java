@@ -1,22 +1,28 @@
 package com.edthrash.JavaWebTest.util;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class StringUtilTest {
-
-    public static void main(String[] args) {
-
-        String result = StringUtil.repeat("Hola", 3);
-        assetEqueals(result, "Hola Hola Hola " );
-
-        assetEqueals(StringUtil.repeat("Hola", 2),"Hola Hola ");
-
+    @Test
+    public  void RepeatStringOnce() {
+        Assert.assertEquals("Hola ", StringUtil.repeat("Hola", 1));
     }
 
-    private static void assetEqueals(String actual, String expected) {
-
-        if(!actual.equals(expected))
-            throw new RuntimeException("Actual is not equal to expected...\nActual: "+actual + "\nExpect: " + expected);
+    @Test
+    public  void RepeatStringMultipleTimes() {
+        Assert.assertEquals("Hola Hola ",StringUtil.repeat("Hola", 2));
     }
 
+    @Test
+    public  void RepeatStringZeroTimes() {
+        Assert.assertEquals("",StringUtil.repeat("", 0));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public  void RepeatStringNegativeTimes() {
+        Assert.assertEquals("",StringUtil.repeat("", -1));
+    }
 }
