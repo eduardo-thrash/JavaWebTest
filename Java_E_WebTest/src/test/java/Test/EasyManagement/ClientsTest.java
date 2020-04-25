@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,9 +27,15 @@ public class ClientsTest {
 		
 		driver = new ChromeDriver();
 		
-		//driver.manage().window().maximize();
-		//driver.manage().window().fullscreen();
 		driver.manage().window().setSize(new Dimension(800, 500));
+		
+		driver.manage().window().setPosition(new Point(400, 300));
+		
+		driver.manage().window().setPosition(new Point(100, 50));
+		
+		Thread.sleep(3000);
+		
+		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
