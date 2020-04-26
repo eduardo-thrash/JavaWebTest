@@ -19,7 +19,6 @@ public class Laboratory {
 
     @Test
     public void EasyManagementClients() throws InterruptedException {// Scenario: Successful diligence of client
-
         WebDriver driver;
 
         System.setProperty("webdriver.chrome.driver", "D:\\AutomationEDThrash\\Java - Automation Selenium Web\\JavaWebTest\\Java_J_WebTest\\Drivers\\chromedriver.exe");
