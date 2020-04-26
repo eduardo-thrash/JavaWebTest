@@ -7,4 +7,6 @@ public class HomeTest {
     // And I enter the @product to search field
     // And I clicks in search button
     // And The system shows results
+
+    //This change is done by Mario Avendano.
 }
