@@ -34,7 +34,7 @@ public class LabTest {
 	public void SetUp() {
 		System.out.println(System.getProperty("os.name"));
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\AutomationEDThrash\\Java - Automation Selenium Web\\JavaWebTest\\Java_E_WebTest\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\AutomationProjectsGit\\JavaWebTest\\JavaWebTest_ETestNG\\Drivers\\chromedriver.exe");
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		

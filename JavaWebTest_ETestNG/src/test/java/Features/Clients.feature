@@ -13,4 +13,4 @@ Feature: Clients
     And I diligence client address
     And I select male client genre
     And I click Save
-    Then It shows a message with Alert and message "Hello World"
+    Then It shows a message with Alert and message Hello World
